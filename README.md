@@ -2,7 +2,7 @@
 
 ## link
 
-[https://mdsamorodin.github.io/puls/](https://mdsamorodin.github.io/marvel/)
+[https://mdsamorodin.github.io/marvel/](https://mdsamorodin.github.io/marvel/)
 
 ## Getting started
 

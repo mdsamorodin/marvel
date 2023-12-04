@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 import Spinner from '../spinner/Spinner'
 import ErrorMessage from '../errorMessage/errorMessage';
 import Skeleton from '../skeleton/Skeleton'
@@ -73,7 +74,9 @@ const View = ({ char }) => {
                         comics.map((item, i) => {
                             return (
                                 <li key={i} className="char__comics-item">
-                                    {item.name}
+                                    <Link to={`/comics/${item.resourceURI.split('/')[item.resourceURI.split('/').length - 1]}`}>
+                                        {item.name}
+                                    </Link>
                                 </li>
                             )
                         }).slice(0, Math.min(10, comics.length)) : 'There are no comics with this character'
