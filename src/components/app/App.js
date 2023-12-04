@@ -11,7 +11,7 @@ const App = () => {
                 <AppHeader />
                 <main>
                     <Switch>
-                        <Route exact path="/">
+                        <Route exact path="/marvel">
                             <MainPage />
                         </Route>
                         <Route exact path="/comics">
